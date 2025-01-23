@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dynamic Survey Form</title>
+        <link rel="stylesheet" href="style.css"></link>
+        
+    </head>
+    <body>
+        
+        <div class="form-container">
+            <h2 id="question-text">Welcome to the Anxietree Garden!</h2>
+            <h3 id="question-text-1" style="text-align: center;">Answer the questions to make your flower grow!</h3>
+            <h3 id="question-text-2" style="text-align: center;">Create a garden with the flowers you collect!</h3>
+        <div id="options-container">
+            <button id="option1" onclick="clickDis()"></button>
+            <button id="option2" onclick="clickDis()"></button>
+            <button id="option3" onclick="clickDis()"></button>
+            <button id="option4" onclick="clickDis()"></button>
+        </div>
+        <p id="correct"></p>
+        <button onClick="clickDis()" id="next">Click Next</button>
+        </div>
+        <div id="choose-container">
+            <h1>Choose a flower!</h1>
+            <button id="orange">Orange</button>
+            <button id="magenta">Magenta</button>
+            <button id="blue">Blue</button>
+            <button id="red">Red</button>
+            <button id="pink">Pink</button>
+            <button id="purple">Purple</button>
+        </div>
+        <canvas id="gardenCanvas" width="400" height="400"></canvas>
+        <script src="script.js"></script>
+    <body>
+</html>
