@@ -18,6 +18,9 @@ body {
   border-radius: 8px;
   background-color: #f9f9f9;
 }
+#choose-container button{
+  margin: 5px;
+}
 .form-container h2 {
   text-align: center;
 }
