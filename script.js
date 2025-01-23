@@ -244,7 +244,7 @@ function drawFlower(){
     } else if (surveyCompleted <=20){
         x=3;
     }
-    flowerText == stage[x];
+    flowerText = stage[x];
     if (flowerText == "flower"){
         flowerPath += flowerText;
     } else {
