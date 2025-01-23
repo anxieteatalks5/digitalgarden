@@ -206,7 +206,6 @@ let flowerText = "";
 let flowerPath = "flowers/";
 let myFlower = "";
 // Funcs and Flower Change
-
 // Get flower type
 document.getElementById("orange").addEventListener("click", function() {
     flowerText = this.innerText;
@@ -227,7 +226,15 @@ document.getElementById("pink").addEventListener("click", function() {
 
 // draw flowers
 function stageUp(){
-    let x = 0;
+    
+}
+function path(){
+    
+    return flowerPath;
+}
+function drawFlower(){
+    // Stage num
+    let x=0;
     if (surveyCompleted <=5){
         x=0;
     } else if  (surveyCompleted <=10){
@@ -237,17 +244,12 @@ function stageUp(){
     } else if (surveyCompleted <=20){
         x=3;
     }
-    return stages[x];
-}
-function path(){
+    flowerText == stage[x];
     if (flowerText == "flower"){
         flowerPath += flowerText;
     } else {
-        flowerPath += stageUp();
+        flowerPath += flowerText;
     }
-    return flowerPath;
-}
-function drawFlower(){
     const img = new Image();
     img.src = path();
     img.onload = function () {
